@@ -6,12 +6,10 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 23:19:44 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/20 21:33:04 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/25 16:22:02 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

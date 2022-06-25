@@ -6,13 +6,10 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 15:04:12 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/17 01:49:04 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/25 16:21:52 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *str)
