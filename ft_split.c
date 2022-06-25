@@ -6,11 +6,10 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 00:30:29 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/17 01:29:50 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/25 16:20:36 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static char	**ft_free_all(char **mat, int i);
