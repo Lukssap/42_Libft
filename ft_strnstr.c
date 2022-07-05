@@ -6,12 +6,10 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/07 21:48:12 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/21 16:25:41 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/26 02:24:39 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)

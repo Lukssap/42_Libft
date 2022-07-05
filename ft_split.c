@@ -6,7 +6,7 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 00:30:29 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/25 16:20:36 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/26 02:02:21 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 static char	**ft_free_all(char **mat, int i);
 
-static int	ft_check_size(char const *s, char c)
-{
+static int	ft_check_size(char const *s, char c) ///oi meu nome é lucas // 'i' //
+{                                           
 	int	i;
-	int	count;
+	int	count;		
 
 	i = 0;
 	count = 0;

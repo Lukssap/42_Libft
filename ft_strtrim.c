@@ -6,7 +6,7 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 23:09:06 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/20 22:12:42 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/06/26 18:15:26 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static size_t	ft_find_end(const char *s1, const char *set, size_t end)
 			i = 0;
 		}
 	}
-	return (end + 1);
+	return (end);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)

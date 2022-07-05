@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/03 21:47:57 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/26 02:24:46 by lsantana         ###   ########.fr       */
+/*   Created: 2022/06/21 04:35:55 by lsantana          #+#    #+#             */
+/*   Updated: 2022/06/21 19:23:16 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	int	i;
+	t_list	*head;
+	t_list	*new_list;
 
-	i = 0;
-	while (str[i])
-		i++;
-	while (i >= 0)
+	head = NULL;
+	while (lst)
 	{
-		if (str[i] == (char)c)
-			return ((char *)(str + i));
-		i--;
+		new_list = ft_lstnew(f(lst->content));
+		if (!new_list)
+		{
+			ft_lstclear(&head, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&head, new_list);
+		lst = lst->next;
 	}
-	return (NULL);
+	return (head);
 }
