@@ -6,7 +6,7 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 23:09:06 by lsantana          #+#    #+#             */
-/*   Updated: 2022/06/26 18:15:26 by lsantana         ###   ########.fr       */
+/*   Updated: 2022/07/12 19:46:19 by lsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1);
 	start = ft_find_start(s1, set);
 	end = ft_find_end(s1, set, end);
-	new_str = ft_substr(s1, start, end - start);
+	new_str = ft_substr(s1, start, (end - start) + 1);
 	if (!new_str)
 		return (NULL);
 	return (new_str);
