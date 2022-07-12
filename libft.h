@@ -6,7 +6,11 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/31 19:32:15 by lsantana          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/07/07 01:10:03 by lsantana         ###   ########.fr       */
+=======
+/*   Updated: 2022/06/28 21:09:25 by lsantana         ###   ########.fr       */
+>>>>>>> 512876266ab65f783a8bf19e5c70852be7b73c38
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +44,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *str);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));

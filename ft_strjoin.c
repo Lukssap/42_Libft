@@ -6,7 +6,11 @@
 /*   By: lsantana <lsantana@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/11 22:01:48 by lsantana          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2022/07/07 01:09:29 by lsantana         ###   ########.fr       */
+=======
+/*   Updated: 2022/06/28 21:08:34 by lsantana         ###   ########.fr       */
+>>>>>>> 512876266ab65f783a8bf19e5c70852be7b73c38
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +32,7 @@
 // 	return (new_str);
 // }
 
+<<<<<<< HEAD
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	int		i;
@@ -53,4 +58,32 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	str[i + j] = '\0';
 	return (str);
+=======
+char	*ft_strjoin(char *s1, char *s2)
+{
+	char	*joined;
+	int		len_s1;
+	int		i;
+
+	if (!s1)
+	{
+		s1 = (char *)malloc(1 * sizeof(char *));
+		s1[0] = '\0';
+	}
+	if (!s1 || !s2)
+		return (NULL);
+	len_s1 = ft_strlen(s1);
+	joined = (char *) malloc((len_s1 + ft_strlen(s2) + 1) * sizeof(char));
+	if (joined == NULL)
+		return (NULL);
+	i = -1;
+	while (s1[++i])
+		joined[i] = s1[i];
+	i--;
+	while (s2[++i - len_s1])
+		joined[i] = s2[i - len_s1];
+	joined[i] = '\0';
+	free(s1);
+	return (joined);
+>>>>>>> 512876266ab65f783a8bf19e5c70852be7b73c38
 }
